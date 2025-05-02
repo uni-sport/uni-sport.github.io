@@ -5,6 +5,7 @@ import { HashRouter, useRoutes } from 'react-router-dom'
 import routes from "virtual:generated-pages-react"
 import { MDXProvider } from '@mdx-js/react'
 import components from './mdx/index'
+import { GlobalWrapper } from './Context'
 
 
 export function App() {
@@ -20,7 +21,9 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <MDXProvider components={components}>
       <HashRouter>
-        <App />
+        <GlobalWrapper>
+          <App />
+        </GlobalWrapper>
       </HashRouter>
     </MDXProvider>
   </StrictMode>,

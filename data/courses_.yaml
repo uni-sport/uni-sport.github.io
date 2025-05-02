@@ -1,0 +1,423 @@
+- name_de: Acro Dance 
+  name_en: Acro Dance 
+  ids:
+    - 31
+
+- name_de: Aikido 
+  name_en: Aikido
+  ids:
+    - 106
+
+- name_de: Akrobatik 
+  name_en: Acrobatics 
+  ids:
+    - 107
+    - 108
+
+- name_de: Funktionales Training
+  name_en: Functional Training
+  ids:
+    - 32
+
+- name_de: Wassergymnastik
+  name_en: Water Gymnastics
+  ids:
+    - 95
+
+- name_de: Athletiktraining
+  name_en: Athletic Training
+  ids:
+    - 36
+
+- name_de: Bachata Salsa 
+  name_en: Bachata Salsa
+  ids:
+    - 33
+    - 34
+    - 122
+    - 123
+
+- name_de: Badminton
+  name_en: Badminton
+  ids:
+    - 37
+    - 109
+
+- name_de: Ballett
+  name_en: Ballet
+  ids:
+    - 38
+    - 39
+
+- name_de: Barre Workout
+  name_en: Barre Workout
+  ids:
+    - 110
+
+- name_de: Basketball
+  name_en: Basketball
+  ids:
+    - 40
+    - 220
+
+- name_de: Bauch-Beine-Po 
+  name_en: Abs-Legs-Glutes
+  ids:
+    - 111
+
+- name_de: Beachvolleyball
+  name_en: Beach Volleyball
+  ids:
+    - 202
+
+- name_de: Billard Carambolage
+  name_en: Billiards Carom
+  ids:
+    - 103
+
+- name_de: Bogenschießen
+  name_en: Archery
+  ids:
+    - 142
+
+- name_de: Brazilian Jiu Jitsu
+  name_en: Brazilian Jiu Jitsu
+  ids:
+    - 99
+
+- name_de: Calisthenics
+  name_en: Calisthenics
+  ids:
+    - 91
+
+- name_de: Capofit
+  name_en: Capofit
+  ids:
+    - 98
+
+- name_de: Cardiotraining
+  name_en: Cardio Training
+  ids:
+    - 42
+
+- name_de: Cyr Wheel
+  name_en: Cyr Wheel
+  ids:
+    - 43
+
+- name_de: Dance Moves 
+  name_en: Dance Moves
+  ids:
+    - 44
+
+- name_de: Discgolf
+  name_en: Disc Golf
+  ids:
+    - 227
+
+- name_de: Disco Fox
+  name_en: Disco Fox
+  ids:
+    - 200
+
+- name_de: Kraftraum 
+  name_en: Gym 
+  ids:
+    - 230
+    - 120
+    - 232
+
+- name_de: Fechten 
+  name_en: Fencing 
+  ids:
+    - 112
+
+- name_de: Flag Football
+  name_en: Flag Football
+  ids:
+    - 100
+
+
+- name_de: Fußball 
+  name_en: Soccer
+  ids:
+    - 224
+
+- name_de: Handball
+  name_en: Handball
+  ids:
+    - 48
+    - 113
+    - 47
+
+- name_de: Handstandkurs
+  name_en: Handstand Course
+  ids:
+    - 169
+
+- name_de: HIIT
+  name_en: HIIT
+  ids:
+    - 49
+
+- name_de: Hip Hop
+  name_en: Hip Hop
+  ids:
+    - 74
+    - 75
+
+- name_de: Inklusionsschwimmen
+  name_en: Inclusive Swimming
+  ids:
+    - 53
+
+- name_de: Inklusionssport Tischtennis
+  name_en: Inclusive Table Tennis
+  ids:
+    - 114
+
+- name_de: Judo
+  name_en: Judo
+  ids:
+    - 116
+
+- name_de: Jumping Fitness
+  name_en: Jumping Fitness
+  ids:
+    - 54
+
+- name_de: Kajak
+  name_en: Kayak
+  ids:
+    - 147
+
+- name_de: Karate
+  name_en: Karate
+  ids:
+    - 117
+
+- name_de: Kickbox-Aerobic
+  name_en: Kickboxing Aerobics
+  ids:
+    - 118
+
+- name_de: Klettern
+  name_en: Climbing
+  ids:
+    - 57
+    - 152
+    - 56
+    - 3
+
+- name_de: Konditionstraining
+  name_en: Conditioning Training
+  ids:
+    - 119
+
+- name_de: Leichtathletik
+  name_en: Athletics
+  ids:
+    - 217
+
+- name_de: Lindy Hop
+  name_en: Lindy Hop
+  ids:
+    - 60
+
+- name_de: Mountainbike 
+  name_en: Mountain Biking 
+  ids:
+    - 145
+    - 213
+
+- name_de: Murph Prep 
+  name_en: Murph Prep
+  ids:
+    - 64
+
+- name_de: Parkour
+  name_en: Parkour
+  ids:
+    - 121
+
+- name_de: Pilates
+  name_en: Pilates
+  ids:
+    - 92
+
+- name_de: Power & Stretch
+  name_en: Power & Stretch
+  ids:
+    - 229
+
+- name_de: Powerbauch
+  name_en: Power Abs
+  ids:
+    - 65
+
+- name_de: QiGong und Achtsamkeit
+  name_en: QiGong and Mindfulness
+  ids:
+    - 66
+
+- name_de: ReLoco Crew
+  name_en: ReLoco Crew
+  ids:
+    - 70
+
+- name_de: Rudern
+  name_en: Rowing
+  ids:
+    - 148
+    - 149
+
+- name_de: Laufen 
+  name_en: Running
+  ids:
+    - 218
+    - 105
+    - 201
+    - 59
+    - 223
+
+- name_de: Sauna
+  name_en: Sauna
+  ids:
+    - 71
+
+- name_de: Schach
+  name_en: Chess
+  ids:
+    - 225
+
+
+- name_de: Schwimmen
+  name_en: Swimming
+  ids:
+    - 72
+    - 127
+    - 97
+    - 124
+    - 125
+    - 126
+    - 96
+
+- name_de: Selbstverteidigung
+  name_en: Self-Defense
+  ids:
+    - 234
+    - 128
+
+- name_de: Slackline
+  name_en: Slackline
+  ids:
+    - 239
+
+- name_de: Snooker
+  name_en: Snooker
+  ids:
+    - 73
+
+- name_de: Tanzkurs
+  name_en: Dance Course
+  ids:
+    - 129
+
+- name_de: Step Choreo
+  name_en: Step Choreo
+  ids:
+    - 76
+    - 197
+
+- name_de: Strength Burn
+  name_en: Strength Burn
+  ids:
+    - 196
+
+- name_de: Tai Ji Quan
+  name_en: Tai Ji Quan
+  ids:
+    - 132
+
+- name_de: Tango Argentino
+  name_en: Argentine Tango
+  ids:
+    - 133
+
+- name_de: Tennis
+  name_en: Tennis
+  ids:
+    - 153
+    - 154
+    - 188
+
+- name_de: Ganzkörpertraining
+  name_en: Full Body Workout
+  ids:
+    - 78
+
+- name_de: Trampolinspringen
+  name_en: Trampoline
+  ids:
+    - 134
+
+- name_de: Turnen
+  name_en: Gymnastics
+  ids:
+    - 136
+    - 135
+
+- name_de: Ultimate Frisbee
+  name_en: Ultimate Frisbee
+  ids:
+    - 141
+    - 140
+
+- name_de: Floorball
+  name_en: Floorball
+  ids:
+    - 137
+
+- name_de: Unterwasserrugby
+  name_en: Underwater Rugby
+  ids:
+    - 79
+
+- name_de: Vertikaltuch
+  name_en: Aerial Silks
+  ids:
+    - 80
+    - 138
+
+- name_de: Yoga
+  name_en: Yoga
+  ids:
+    - 228
+    - 86
+    - 85
+    - 88
+    - 84
+    - 219
+
+- name_de: Völkerball
+  name_en: Dodgeball
+  ids:
+    - 81
+
+- name_de: Volleyball
+  name_en: Volleyball
+  ids:
+    - 139
+    - 193
+
+- name_de: Zen Meditation
+  name_en: Zen Meditation
+  ids:
+    - 69
+
+- name_de: Zumba
+  name_en: Zumba
+  ids:
+    - 90
+
+

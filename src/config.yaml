@@ -1,0 +1,9 @@
+calendar:
+  start: 2025-04-23
+  end: 2025-07-25
+  holidays:
+    - 2025-05-01 # Erster Mai
+    - 2025-05-29 # Christi Himmelfahrt
+    - 2025-06-09 # Pfingstmontag
+    - 2025-06-10 # Pfingstdienstag
+    - 2025-06-19 # Fronleichnam

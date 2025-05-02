@@ -1,0 +1,559 @@
+
+calendar:
+  timezone: Europe/Berlin
+  start: 2025-04-23
+  end: 2025-07-25
+  holidays:
+    - 2025-05-01 # Erster Mai
+    - 2025-05-29 # Christi Himmelfahrt
+    - 2025-06-09 # Pfingstmontag
+    - 2025-06-19 # Fronleichnam
+
+rooms: {}
+
+
+
+courses:
+- name_de: Acro Dance
+  name_en: Acro Dance
+  description_de: Eine Kombination aus klassischem Tanz und akrobatischen Elementen.
+  description_en: A fusion of classical dance and acrobatic moves.
+  ids:
+    - 31
+
+- name_de: Aikido
+  name_en: Aikido
+  description_de: Japanische Kampfkunst, die auf Verteidigung und Harmonie basiert.
+  description_en: Japanese martial art focused on defense and harmony.
+  ids:
+    - 106
+
+- name_de: Akrobatik
+  name_en: Acrobatics
+  description_de: Körperbeherrschung und spektakuläre Bewegungen in der Luft und am Boden.
+  description_en: Control and spectacular movements in the air and on the ground.
+  ids:
+    - 107
+    - 108
+
+- name_de: Funktionales Training
+  name_en: Functional Training
+  description_de: Ganzkörpertraining zur Verbesserung von Kraft, Ausdauer und Koordination.
+  description_en: Full-body workout to improve strength, endurance, and coordination.
+  ids:
+    - 32
+
+- name_de: Wassergymnastik
+  name_en: Water Gymnastics
+  description_de: Schonendes Fitnesstraining im Wasser zur Stärkung von Herz und Muskeln.
+  description_en: Low-impact water fitness training to strengthen heart and muscles.
+  ids:
+    - 95
+
+- name_de: Athletiktraining
+  name_en: Athletic Training
+  description_de: Leistungsorientiertes Training zur Steigerung von Kraft, Schnelligkeit und Beweglichkeit.
+  description_en: Performance-based training to enhance strength, speed, and agility.
+  ids:
+    - 36
+
+- name_de: Bachata Salsa
+  name_en: Bachata Salsa
+  description_de: Paartanz mit rhythmischen Bewegungen aus der karibischen Tanzkultur.
+  description_en: Partner dance with rhythmic moves from Caribbean dance culture.
+  ids:
+    - 33
+    - 34
+    - 122
+    - 123
+
+- name_de: Badminton
+  name_en: Badminton
+  description_de: Rückschlagspiel mit Schlägern und Federball für Schnelligkeit und Reaktion.
+  description_en: Racket sport with a shuttlecock focused on speed and reflexes.
+  ids:
+    - 37
+    - 109
+
+- name_de: Ballett
+  name_en: Ballet
+  description_de: Klassischer Tanzstil mit eleganten und technisch anspruchsvollen Bewegungen.
+  description_en: Classical dance style with elegant and technically demanding movements.
+  ids:
+    - 38
+    - 39
+
+- name_de: Barre Workout
+  name_en: Barre Workout
+  description_de: Fitness-Training inspiriert vom Ballett mit Fokus auf Kraft, Haltung und Flexibilität.
+  description_en: Ballet-inspired fitness training focusing on strength, posture, and flexibility.
+  ids:
+    - 110
+
+- name_de: Basketball
+  name_en: Basketball
+  description_de: Mannschaftssport, bei dem der Ball in den gegnerischen Korb geworfen wird.
+  description_en: Team sport where players aim to shoot the ball into the opposing hoop.
+  ids:
+    - 40
+    - 220
+
+- name_de: Bauch Beine Po
+  name_en: Glutes, Core & Thighs
+  description_de: Intensives Workout für die Kräftigung der Körpermitte und unteren Muskelgruppen.
+  description_en: Intense workout to strengthen the core and lower body muscles.
+  ids:
+    - 111
+
+- name_de: Beachvolleyball
+  name_en: Beach Volleyball
+  description_de: Volleyballspiel im Sand mit besonderem Fokus auf Beweglichkeit und Teamarbeit.
+  description_en: Volleyball played on sand with an emphasis on agility and teamwork.
+  ids:
+    - 202
+
+- name_de: Billard Carambolage
+  name_en: Billiards Carom
+  description_de: Präzisionsspiel mit Kugeln auf einem Tisch ohne Taschen.
+  description_en: Precision cue sport played with balls on a pocketless table.
+  ids:
+    - 103
+
+- name_de: Bogenschießen
+  name_en: Archery
+  description_de: Zielsportart mit Pfeil und Bogen für Konzentration und Kontrolle.
+  description_en: Target sport using bow and arrow, requiring focus and control.
+  ids:
+    - 142
+- name_de: Brazilian Jiu Jitsu
+  name_en: Brazilian Jiu Jitsu
+  description_de: Bodenkampfsport mit Fokus auf Technik, Hebel und Kontrolle.
+  description_en: Ground-based martial art focusing on technique, leverage, and control.
+  ids:
+    - 99
+
+- name_de: Calisthenics
+  name_en: Calisthenics
+  description_de: Eigengewichtsübungen zur Entwicklung von Kraft und Körperkontrolle.
+  description_en: Bodyweight exercises for developing strength and body control.
+  ids:
+    - 91
+
+- name_de: Capofit
+  name_en: Capofit
+  description_de: Fitnessprogramm, das Capoeira-Techniken mit funktionellem Training kombiniert.
+  description_en: Fitness program combining Capoeira techniques with functional training.
+  ids:
+    - 98
+
+- name_de: Cardiotraining
+  name_en: Cardio Training
+  description_de: Ausdauertraining zur Stärkung des Herz-Kreislauf-Systems.
+  description_en: Endurance training to strengthen the cardiovascular system.
+  ids:
+    - 42
+
+- name_de: Cyr Wheel
+  name_en: Cyr Wheel
+  description_de: Akrobatische Bewegungskunst mit einem großen Metallrad.
+  description_en: Acrobatic performance art using a large metal wheel.
+  ids:
+    - 43
+
+- name_de: Dance Moves
+  name_en: Dance Moves
+  description_de: Tanzkurs mit modernen Choreografien und dynamischen Bewegungen.
+  description_en: Dance class featuring modern choreographies and dynamic movements.
+  ids:
+    - 44
+
+- name_de: Discgolf
+  name_en: Disc Golf
+  description_de: Präzisionssport, bei dem Frisbees in Zielkörbe geworfen werden.
+  description_en: Precision sport where frisbees are thrown into target baskets.
+  ids:
+    - 227
+
+- name_de: Disco Fox
+  name_en: Disco Fox
+  description_de: Beliebter Paartanz mit einfachen Schrittfolgen zu moderner Musik.
+  description_en: Popular partner dance with simple steps set to modern music.
+  ids:
+    - 200
+
+- name_de: Kraftraum
+  name_en: Gym
+  description_de: Trainingsbereich mit Geräten zur gezielten Kraftsteigerung.
+  description_en: Training area equipped for targeted strength development.
+  ids:
+    - 230
+    - 120
+    - 232
+
+- name_de: Fechten
+  name_en: Fencing
+  description_de: Duellsport mit Degen, Florett oder Säbel für Reaktion und Technik.
+  description_en: Duel sport using foil, épée, or sabre focusing on reaction and technique.
+  ids:
+    - 112
+
+- name_de: Flag Football
+  name_en: Flag Football
+  description_de: Kontaktarme Variante des American Football mit Flaggen statt Tackles.
+  description_en: Low-contact version of American football using flags instead of tackles.
+  ids:
+    - 100
+- name_de: Fußball
+  name_en: Soccer
+  description_de: Weltweit beliebter Mannschaftssport, bei dem Tore mit dem Fuß erzielt werden.
+  description_en: Globally popular team sport where goals are scored using the feet.
+  ids:
+    - 224
+
+- name_de: Handball
+  name_en: Handball
+  description_de: Schneller Mannschaftssport mit vielen Toren und körperlichem Einsatz.
+  description_en: Fast-paced team sport with many goals and physical intensity.
+  ids:
+    - 48
+    - 113
+    - 47
+
+- name_de: Handstandkurs
+  name_en: Handstand Course
+  description_de: Training zur Verbesserung von Balance, Kraft und Körperkontrolle im Handstand.
+  description_en: Training to improve balance, strength, and body control in handstands.
+  ids:
+    - 169
+
+- name_de: HIIT
+  name_en: HIIT
+  description_de: Hochintensives Intervalltraining zur Fettverbrennung und Ausdauersteigerung.
+  description_en: High-intensity interval training for fat burning and endurance building.
+  ids:
+    - 49
+
+- name_de: Hip Hop
+  name_en: Hip Hop
+  description_de: Urbaner Tanzstil mit rhythmischen und ausdrucksstarken Bewegungen.
+  description_en: Urban dance style with rhythmic and expressive movements.
+  ids:
+    - 74
+    - 75
+
+- name_de: Inklusionsschwimmen
+  name_en: Inclusive Swimming
+  description_de: Schwimmkurs für Menschen mit Behinderung.
+  description_en: Swimming class for people with disabilities.
+  ids:
+    - 53
+
+- name_de: Inklusionssport Tischtennis
+  name_en: Inclusive Table Tennis
+  description_de: Tischtennisangebot für Teilnehmende mit Behinderung.
+  description_en: Table tennis program for participants with disabilities.
+  ids:
+    - 114
+- name_de: Judo
+  name_en: Judo
+  description_de: Japanische Kampfsportart mit Würfen und Bodentechniken.
+  description_en: Japanese martial art focusing on throws and groundwork techniques.
+  ids:
+    - 116
+
+- name_de: Jumping Fitness
+  name_en: Jumping Fitness
+  description_de: Fitnessprogramm auf dem Trampolin für Ausdauer, Kraft und Koordination.
+  description_en: Fitness program on a trampoline for endurance, strength, and coordination.
+  ids:
+    - 54
+
+- name_de: Kajak
+  name_en: Kayak
+  description_de: Wassersportart, bei der man in einem schmalen Boot paddelt.
+  description_en: Water sport involving paddling in a narrow boat.
+  ids:
+    - 147
+
+- name_de: Karate
+  name_en: Karate
+  description_de: Japanische Kampfkunst mit Schlägen, Tritten und Abwehrtechniken.
+  description_en: Japanese martial art using punches, kicks, and defensive techniques.
+  ids:
+    - 117
+
+- name_de: Kickbox-Aerobic
+  name_en: Kickboxing Aerobics
+  description_de: Fitness-Workout, das Kickboxtechniken mit Aerobic-Übungen kombiniert.
+  description_en: Fitness workout combining kickboxing techniques with aerobic exercises.
+  ids:
+    - 118
+
+- name_de: Klettern
+  name_en: Climbing
+  description_de: Sportliches Klettern an künstlichen oder natürlichen Wänden und Felsen.
+  description_en: Sport climbing on artificial walls or natural rocks.
+  ids:
+    - 57
+    - 152
+    - 56
+    - 3
+
+- name_de: Konditionstraining
+  name_en: Conditioning Training
+  description_de: Training zur Verbesserung der allgemeinen Fitness und Belastbarkeit.
+  description_en: Training to improve overall fitness and endurance.
+  ids:
+    - 119
+
+- name_de: Leichtathletik
+  name_en: Athletics
+  description_de: Vielseitiger Wettkampfsport mit Disziplinen wie Laufen, Springen und Werfen.
+  description_en: Versatile competitive sport including running, jumping, and throwing disciplines.
+  ids:
+    - 217
+
+- name_de: Lindy Hop
+  name_en: Lindy Hop
+  description_de: Schwungvoller Swingtanz aus den 1930er Jahren mit Partner.
+  description_en: Energetic swing dance from the 1930s performed with a partner.
+  ids:
+    - 60
+
+- name_de: Mountainbike
+  name_en: Mountain Biking
+  description_de: Radfahren im Gelände mit sportlichem Anspruch und Technik.
+  description_en: Off-road cycling with a focus on athleticism and technique.
+  ids:
+    - 145
+    - 213
+
+- name_de: Murph Prep
+  name_en: Murph Prep
+  description_de: Vorbereitungstraining für das intensive „Murph“-Workout.
+  description_en: Preparatory training for the intense “Murph” workout challenge.
+  ids:
+    - 64
+
+- name_de: Parkour
+  name_en: Parkour
+  description_de: Bewegungskunst, bei der Hindernisse effizient und kreativ überwunden werden.
+  description_en: Movement discipline focused on efficiently and creatively overcoming obstacles.
+  ids:
+    - 121
+
+- name_de: Pilates
+  name_en: Pilates
+  description_de: Ganzkörpertraining zur Stärkung der Tiefenmuskulatur und Verbesserung der Haltung.
+  description_en: Full-body training to strengthen deep muscles and improve posture.
+  ids:
+    - 92
+
+- name_de: Power & Stretch
+  name_en: Power & Stretch
+  description_de: Kombination aus kräftigenden Übungen und Dehnungseinheiten.
+  description_en: Combination of strengthening exercises and stretching sessions.
+  ids:
+    - 229
+
+- name_de: Powerbauch
+  name_en: Power Abs
+  description_de: Intensives Training zur Stärkung der Bauchmuskulatur.
+  description_en: Intense workout focused on strengthening the abdominal muscles.
+  ids:
+    - 65
+
+- name_de: QiGong und Achtsamkeit
+  name_en: QiGong and Mindfulness
+  description_de: Sanfte Bewegungen und meditative Übungen zur Förderung der inneren Balance.
+  description_en: Gentle movements and meditative practices to promote inner balance.
+  ids:
+    - 66
+
+- name_de: Sauna
+  name_en: Sauna
+  description_de: Entspannungs- und Gesundheitserlebnis durch hohe Temperaturen und Dampfbäder.
+  description_en: Relaxation and health experience through high temperatures and steam baths.
+  ids:
+    - 71
+
+- name_de: Schach
+  name_en: Chess
+  description_de: Strategie- und Denkspiel, bei dem zwei Spieler gegeneinander antreten.
+  description_en: Strategy and thinking game where two players compete against each other.
+  ids:
+    - 225
+
+- name_de: Schwimmen
+  name_en: Swimming
+  description_de: Sportliche Aktivität im Wasser zur Verbesserung der Ausdauer und Fitness.
+  description_en: Water-based activity to improve endurance and fitness.
+  ids:
+    - 72
+    - 127
+    - 97
+    - 124
+    - 125
+    - 126
+    - 96
+
+- name_de: Selbstverteidigung
+  name_en: Self-Defense
+  description_de: Techniken zur Verteidigung in gefährlichen Situationen.
+  description_en: Techniques for defense in dangerous situations.
+  ids:
+    - 234
+    - 128
+
+- name_de: Slackline
+  name_en: Slackline
+  description_de: Balancieren auf einem gespannten Band, das zwischen zwei Punkten befestigt ist.
+  description_en: Balancing on a taut line stretched between two points.
+  ids:
+    - 239
+
+- name_de: Snooker
+  name_en: Snooker
+  description_de: Präzisionssport mit Billiardkugeln, bei dem auf ein Tablett mit 6 Taschen gespielt wird.
+  description_en: Precision sport using billiard balls on a table with six pockets.
+  ids:
+    - 73
+
+- name_de: Tanzkurs
+  name_en: Dance Course
+  description_de: Tanzunterricht zur Erlernung verschiedener Tanzstile und -techniken.
+  description_en: Dance lessons for learning various dance styles and techniques.
+  ids:
+    - 129
+
+- name_de: Step Choreo
+  name_en: Step Choreo
+  description_de: Choreografiertes Step-Training zur Verbesserung von Koordination und Ausdauer.
+  description_en: Choreographed step training to improve coordination and endurance.
+  ids:
+    - 76
+    - 197
+
+- name_de: Strength Burn
+  name_en: Strength Burn
+  description_de: Intensives Krafttraining zur Steigerung der Muskelmasse und Fettverbrennung.
+  description_en: Intense strength training to increase muscle mass and fat burning.
+  ids:
+    - 196
+
+- name_de: Tai Ji Quan
+  name_en: Tai Ji Quan
+  description_de: Chinesische Kampfkunst, die fließende Bewegungen und Meditation kombiniert.
+  description_en: Chinese martial art combining flowing movements and meditation.
+  ids:
+    - 132
+
+- name_de: Tango Argentino
+  name_en: Argentine Tango
+  description_de: Leidenschaftlicher Paartanz aus Argentinien mit intensiver Führung und Verbindung.
+  description_en: Passionate partner dance from Argentina with intense lead and connection.
+  ids:
+    - 133
+
+- name_de: Tennis
+  name_en: Tennis
+  description_de: Ballsport, bei dem zwei oder vier Spieler den Ball über ein Netz schlagen.
+  description_en: Racquet sport where two or four players hit a ball over a net.
+  ids:
+    - 153
+    - 154
+    - 188
+
+- name_de: Ganzkörpertraining
+  name_en: Full Body Workout
+  description_de: Training zur Kräftigung des gesamten Körpers mit verschiedenen Übungen.
+  description_en: Training to strengthen the entire body with various exercises.
+  ids:
+    - 78
+
+- name_de: Trampolinspringen
+  name_en: Trampoline
+  description_de: Spaßiger Sport auf einem Trampolin zur Verbesserung der Koordination und Fitness.
+  description_en: Fun sport on a trampoline to improve coordination and fitness.
+  ids:
+    - 134
+
+- name_de: Turnen
+  name_en: Gymnastics
+  description_de: Körperliche Disziplin, die Flexibilität, Kraft und Beweglichkeit fördert.
+  description_en: Physical discipline that promotes flexibility, strength, and agility.
+  ids:
+    - 136
+    - 135
+
+- name_de: Ultimate Frisbee
+  name_en: Ultimate Frisbee
+  description_de: Mannschaftssport, bei dem ein Frisbee über das Spielfeld geworfen wird.
+  description_en: Team sport where a frisbee is thrown across the field.
+  ids:
+    - 141
+    - 140
+
+- name_de: Floorball
+  name_en: Floorball
+  description_de: Hallensport mit einem Ball und Schlägern, ähnlich wie Hockey.
+  description_en: Indoor sport with a ball and sticks, similar to hockey.
+  ids:
+    - 137
+
+- name_de: Unterwasserrugby
+  name_en: Underwater Rugby
+  description_de: Teamsport im Wasser, bei dem ein Ball im Becken versenkt werden muss.
+  description_en: Team sport played underwater, where the objective is to sink a ball in the pool.
+  ids:
+    - 79
+
+- name_de: Vertikaltuch
+  name_en: Aerial Silks
+  description_de: Luftakrobatik, bei der Kunststücke an langen Stoffbahnen in der Luft ausgeführt werden.
+  description_en: Aerial acrobatics where tricks are performed on long fabric ribbons in the air.
+  ids:
+    - 80
+    - 138
+
+- name_de: Yoga
+  name_en: Yoga
+  description_de: Körperliche und geistige Praxis, die Körperhaltung und Atmung kombiniert.
+  description_en: Physical and mental practice that combines body postures and breathing techniques.
+  ids:
+    - 228
+    - 86
+    - 85
+    - 88
+    - 84
+    - 219
+
+- name_de: Völkerball
+  name_en: Dodgeball
+  description_de: Mannschaftssport, bei dem Bälle auf die Gegner geworfen werden, um sie aus dem Spiel zu nehmen.
+  description_en: Team sport where balls are thrown at opponents to eliminate them from the game.
+  ids:
+    - 81
+
+- name_de: Volleyball
+  name_en: Volleyball
+  description_de: Teamsport, bei dem der Ball über ein Netz in das Feld des Gegners geschlagen wird.
+  description_en: Team sport where the ball is hit over a net into the opponent's court.
+  ids:
+    - 139
+    - 193
+
+- name_de: Zen Meditation
+  name_en: Zen Meditation
+  description_de: Meditative Praxis zur Förderung der inneren Ruhe und Achtsamkeit.
+  description_en: Meditative practice that promotes inner peace and mindfulness.
+  ids:
+    - 69
+
+- name_de: Zumba
+  name_en: Zumba
+  description_de: Tanzfitnessprogramm mit lateinamerikanischen Rhythmen und aerobischen Übungen.
+  description_en: Dance fitness program with Latin American rhythms and aerobic exercises.
+  ids:
+    - 90
+
