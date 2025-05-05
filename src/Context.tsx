@@ -14,24 +14,38 @@ export interface Meta {
 interface TimeSlotRaw {
   name_de: string;
   name_en: string;
-  room: string;
+  rooms: string[];
   day: string;
   startTime: number;
   endTime: number;
   supervisors: Supervisor[];
+  schedule: Schedule;
 }
 interface CourseRoute {
   meta: Meta;
   path: string;
 }
+export interface ScheduleWeekly {
+  start: string;
+  end: string;
+  schedule: "weekly"
+  day: string;
+  exclusions: string[];
+}
+export interface ScheduleDates {
+  schedule: "dates";
+  dates: string[];
+}
+export type Schedule = ScheduleWeekly | ScheduleDates;
 
 export interface TimeSlot {
   name: string;
-  room: string;
+  rooms: string[];
   day: string;
   startTime: string;
   endTime: string;
   supervisors: Supervisor[];
+  schedule: Schedule;
 }
 
 export interface Course {
@@ -61,26 +75,20 @@ export const GlobalWrapper = ({ children }: { children: React.ReactNode }) => {
   if (!course_route || !Array.isArray(course_route.children)) {
     throw new Error("No course route found");
   }
-  const rooms = {} as Record<string, number>;
 
 
   const courses = course_route.children.map((c) => {
     const { path, meta } = c as CourseRoute;
     const time_slots = meta.time_slots.map((slot) => {
       const name = (locale === 'de') ? slot.name_de : slot.name_en;
-      if (slot.room) {
-        if (!rooms[slot.room]) {
-          rooms[slot.room] = 0;
-        }
-        rooms[slot.room] += 1;
-      }
       return {
         name,
-        room: slot.room,
+        rooms: slot.rooms,
         day: slot.day,
         startTime: slot.startTime,
         endTime: slot.endTime,
         supervisors: slot.supervisors,
+        schedule: slot.schedule,
       };
     });
     const fullPath = `/courses/${path}`;
@@ -91,7 +99,6 @@ export const GlobalWrapper = ({ children }: { children: React.ReactNode }) => {
       path: fullPath,
     };
   });
-  console.log("Rooms", rooms);
 
 
   const value = useMemo(() => ({

@@ -7,27 +7,52 @@ description_en: Racket sport with a shuttlecock focused on speed and reflexes.
 time_slots:
 - name_de: Badminton - Freier Spielbetrieb
   name_en: Badminton - Open Play
-  room: Spielhalle 1+2+3
-  day: Samstag
+  rooms: &id001
+  - Spielhalle 1
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Saturday
   startTime: "09:00"
   endTime: "10:29"
   supervisors: []
+  schedule:
+    start: '2025-04-26'
+    end: '2025-07-19'
+    schedule: weekly
+    day: Saturday
+    exclusions:
+    - '2025-05-03'
 - name_de: Badminton - Freier Spielbetrieb
   name_en: Badminton - Open Play
-  room: Spielhalle 2+3
-  day: Freitag
+  rooms:
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Friday
   startTime: "16:00"
   endTime: "17:59"
   supervisors: []
+  schedule:
+    start: '2025-04-25'
+    end: '2025-07-25'
+    schedule: weekly
+    day: Friday
+    exclusions: []
 - name_de: Badminton Techniktraining
   name_en: Badminton – Technique Training
-  room: Spielhalle 1+2+3
-  day: Dienstag
+  rooms: *id001
+  day: Tuesday
   startTime: "17:00"
   endTime: "17:59"
   supervisors:
   - name: Paula Kick
   - name: Leander Benninger
+  schedule:
+    start: '2025-04-29'
+    end: '2025-07-22'
+    schedule: weekly
+    day: Tuesday
+    exclusions:
+    - '2025-06-10'
 ---
 
 <Locale value="de">

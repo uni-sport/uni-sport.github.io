@@ -11,16 +11,6 @@ import textwrap
 
 yaml = YAML(typ="rt")
 
-weekdays = [
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
-    "Sonntag",
-]
-
 
 def create_schedules(calendar):
     holidays = calendar["holidays"]
@@ -34,6 +24,16 @@ def create_schedules(calendar):
             current_date += timedelta(days=7)
         schedules.append(set(dates))
     return schedules
+
+
+def parse_rooms(room, room_config):
+    room = re.sub(r"\s*\d+/\d+\s*", "", room)
+    room = re.sub(r"\s*\d+\.\s*Hälfte\s*", "", room)
+
+    if room in room_config:
+        room = room_config[room]
+        return room
+    return [room]
 
 
 def parse_dates(booking, schedules):
@@ -50,7 +50,7 @@ def parse_dates(booking, schedules):
             best_schedule = schedule.copy()
 
     additions = date_set - best_schedule
-    if best_diff < len(date_set) and len(additions) == 0:
+    if len(additions) == 0:
         day = list(best_schedule)[0].strftime("%A")
         exclusions = best_schedule - date_set
         for d in exclusions.copy():
@@ -69,6 +69,7 @@ def parse_dates(booking, schedules):
             "exclusions": [d.strftime("%Y-%m-%d") for d in exclusions],
         }
     return {
+        "schedule": "dates",
         "dates": [d.strftime("%Y-%m-%d") for d in dates],
     }
 
@@ -103,15 +104,17 @@ def generate_page(course, course_idx):
             description_en = textwrap.fill(c["course"]["description_en"], width=80)
             text_de = f"{text_de} \n\n {description_de}"
             text_en = f"{text_en} \n\n {description_en}"
+            print(c["rooms"])
             time_slots.append(
                 {
                     "name_de": c["course"]["name_de"],
                     "name_en": c["course"]["name_en"],
-                    "room": c["room"]["name"],
+                    "rooms": c["rooms"],
                     "day": c["day"],
                     "startTime": DoubleQuotedScalarString(c["startTime"]),
                     "endTime": DoubleQuotedScalarString(c["endTime"]),
                     "supervisors": c["supervisors"],
+                    "schedule": c["schedule"],
                 }
             )
 
@@ -139,6 +142,8 @@ def main():
         config = yaml.load(config_file)
     courses = config["courses"]
     calendar = config["calendar"]
+    ignore = config["ignore"]
+    room_config = config["rooms"]
 
     timezone = pytz.timezone(calendar["timezone"])
     products = {}
@@ -207,15 +212,17 @@ def main():
                 name = s["firstName"] + " " + s["lastName"]
                 supervisors.append({"name": name})
 
+            rooms = parse_rooms(products[room_id]["name"], room_config)
+
             booking = {
                 "id": b["id"],
                 "course_id": course_id,
-                "room": products[room_id],
+                "rooms": rooms,
                 "room_id": room_id,
                 "course": products[course_id],
                 "startDate": b["startDate"],
                 "endDate": b["endDate"],
-                "day": weekdays[startDate.weekday()],
+                "day": startDate.strftime("%A"),
                 "startTime": startDate.time().strftime("%H:%M"),
                 "endTime": endDate.time().strftime("%H:%M"),
                 "supervisors": supervisors,
@@ -239,17 +246,24 @@ def main():
     course_idx = {}
     schedules = create_schedules(calendar)
     for booking in bookings:
-        print(booking["course"]["name"], booking["course_id"])
-        print(parse_dates(booking, schedules))
-
+        booking["schedule"] = parse_dates(booking, schedules)
         course_id = booking["course_id"]
+        if course_id in ignore:
+            continue
         if course_id not in course_idx:
             course_idx[course_id] = []
         course_idx[course_id].append(booking)
-        # print(course_id, booking["course"]["name"])
 
+    ids = set()
     for course in courses:
+        for id in course["ids"]:
+            ids.add(id)
         generate_page(course, course_idx)
+
+    for course_id in course_idx:
+        if course_id not in ids:
+            print(f"Course {course_id} not found in courses")
+            print(course_idx[course_id][0])
 
 
 if __name__ == "__main__":

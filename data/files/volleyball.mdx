@@ -7,33 +7,63 @@ description_en: Team sport where the ball is hit over a net into the opponent's 
 time_slots:
 - name_de:
   name_en:
-  room: Spielhalle 2+3
-  day: Montag
+  rooms: &id001
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Monday
   startTime: "16:00"
   endTime: "16:59"
   supervisors: []
+  schedule:
+    start: '2025-04-28'
+    end: '2025-07-21'
+    schedule: weekly
+    day: Monday
+    exclusions: []
 - name_de:
   name_en:
-  room: Spielhalle 2+3
-  day: Samstag
+  rooms: *id001
+  day: Saturday
   startTime: "10:30"
   endTime: "11:59"
   supervisors: []
+  schedule:
+    start: '2025-04-26'
+    end: '2025-07-19'
+    schedule: weekly
+    day: Saturday
+    exclusions:
+    - '2025-05-03'
 - name_de:
   name_en:
-  room: Spielhalle 1+2+3
-  day: Freitag
+  rooms:
+  - Spielhalle 1
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Friday
   startTime: "18:00"
   endTime: "18:59"
   supervisors: []
+  schedule:
+    start: '2025-04-25'
+    end: '2025-07-25'
+    schedule: weekly
+    day: Friday
+    exclusions: []
 - name_de: Volleyball-Technikkurs
   name_en: Volleyball Technique Training
-  room: Spielhalle 2+3
-  day: Montag
+  rooms: *id001
+  day: Monday
   startTime: "17:00"
   endTime: "17:59"
   supervisors:
   - name: Amelie Maier
+  schedule:
+    start: '2025-04-28'
+    end: '2025-07-21'
+    schedule: weekly
+    day: Monday
+    exclusions: []
 ---
 
 <Locale value="de">

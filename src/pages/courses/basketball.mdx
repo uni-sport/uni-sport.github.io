@@ -7,40 +7,74 @@ description_en: Team sport where players aim to shoot the ball into the opposing
 time_slots:
 - name_de: Basketball - Freier Spielbetrieb
   name_en: Basketball - Open Play
-  room: Spielhalle 2+3
-  day: Montag
+  rooms: &id001
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Monday
   startTime: "20:00"
   endTime: "21:59"
   supervisors: []
+  schedule:
+    start: '2025-04-28'
+    end: '2025-07-21'
+    schedule: weekly
+    day: Monday
+    exclusions: []
 - name_de: Basketball - Freier Spielbetrieb
   name_en: Basketball - Open Play
-  room: Spielhalle 2+3
-  day: Donnerstag
+  rooms: *id001
+  day: Thursday
   startTime: "21:00"
   endTime: "21:59"
   supervisors: []
+  schedule:
+    start: '2025-04-24'
+    end: '2025-07-24'
+    schedule: weekly
+    day: Thursday
+    exclusions: []
 - name_de: Basketball - Freier Spielbetrieb
   name_en: Basketball - Open Play
-  room: Spielhalle 2+3
-  day: Samstag
+  rooms: *id001
+  day: Saturday
   startTime: "12:00"
   endTime: "13:29"
   supervisors: []
+  schedule:
+    start: '2025-04-26'
+    end: '2025-07-19'
+    schedule: weekly
+    day: Saturday
+    exclusions:
+    - '2025-05-03'
 - name_de: Basketball - Freier Spielbetrieb
   name_en: Basketball - Open Play
-  room: Turnhalle
-  day: Dienstag
+  rooms:
+  - Turnhalle
+  day: Tuesday
   startTime: "16:00"
   endTime: "16:59"
   supervisors: []
+  schedule:
+    start: '2025-04-29'
+    end: '2025-07-22'
+    schedule: weekly
+    day: Tuesday
+    exclusions: []
 - name_de: Basketball Techniktraining für Anfänger
   name_en: Basketball Technique for Beginners
-  room: Spielhalle 2+3
-  day: Donnerstag
+  rooms: *id001
+  day: Thursday
   startTime: "20:00"
   endTime: "20:59"
   supervisors:
   - name: Leslie van Dyck
+  schedule:
+    start: '2025-04-24'
+    end: '2025-07-24'
+    schedule: weekly
+    day: Thursday
+    exclusions: []
 ---
 
 <Locale value="de">

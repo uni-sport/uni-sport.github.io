@@ -1,9 +1,10 @@
 import { Link, useOutlet, useLocation } from "react-router-dom";
 import LanguageSwitch from "../components/LanguageSwitch";
-import useGlobalContext, { Course, TimeSlot } from "../Context";
+import useGlobalContext, { Course, Schedule, ScheduleWeekly, TimeSlot } from "../Context";
 import Room from "../components/Room";
 import Time from "../components/Time";
 import Supervisor from "../components/Supervisor";
+import Day from "../components/Day";
 
 
 
@@ -19,7 +20,51 @@ function CourseElem({ data }: { data: Course }) {
   );
 }
 
+function Exclusions({ data }: { data: ScheduleWeekly }) {
+  const { locale } = useGlobalContext();
+  const message = locale === "de" ? "Nicht an folgenden Tagen:" : "Except on:";
+
+  const { exclusions } = data;
+  if (exclusions.length === 0) return null;
+  return (
+    <div className="text-xs text-gray-500">
+      {message}
+      {exclusions.map((date, index) => (
+        <span className="text-gray-800 p-0.5" key={index}>
+          <Day value={date} />
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function Days({ data }: { data: Schedule }) {
+  if (data.schedule === "weekly") {
+    return (
+      <div className="text-sm">
+        <Day value={data.start} /> - <Day value={data.end} />
+        <Exclusions data={data} />
+      </div>
+    );
+  }
+  const { dates } = data;
+  return (
+    <div>
+      {
+        dates.map((date, index) => (
+          <p className="text-xs text-gray-800" key={index}>
+            <Day value={date} />
+          </p>
+        ))
+      }
+    </div>
+  );
+}
+
 function Slot({ data }: { data: TimeSlot }) {
+  const { schedule, rooms } = data;
+
+
   return (
     <div className="border-b flex justify-between items-center last:border-none border-gray-500">
       <div>
@@ -30,7 +75,13 @@ function Slot({ data }: { data: TimeSlot }) {
           <Time value={data.startTime} /> - <Time value={data.endTime} />
         </div>
       </div>
-      <Room value={data.room} />
+      <div>
+        {rooms.map((room, index) => (
+          <p key={index} className="text-sm px-1 text-gray-500">
+            <Room value={room} />
+          </p>
+        ))}
+      </div>
       <span>
         {data.name}
       </span>
@@ -41,6 +92,7 @@ function Slot({ data }: { data: TimeSlot }) {
           </span>
         ))}
       </div>
+      <Days data={schedule} />
     </div>
 
   );

@@ -7,19 +7,33 @@ description_en: Volleyball played on sand with an emphasis on agility and teamwo
 time_slots:
 - name_de: Beachvolleyball Technik- & Spieltraining
   name_en: Beach Volleyball Technique & Tactics
-  room: Beachvolleyball 1 gesamte Anlage
-  day: Dienstag
+  rooms: &id001
+  - Beachvolleyballfelder
+  day: Tuesday
   startTime: "17:00"
   endTime: "17:59"
   supervisors:
   - name: Johannes Maletius
+  schedule:
+    start: '2025-04-29'
+    end: '2025-07-22'
+    schedule: weekly
+    day: Tuesday
+    exclusions:
+    - '2025-06-10'
 - name_de: Beachvolleyball Technik- & Spieltraining
   name_en: Beach Volleyball Technique & Tactics
-  room: Beachvolleyball 1 gesamte Anlage
-  day: Montag
+  rooms: *id001
+  day: Monday
   startTime: "13:00"
   endTime: "18:59"
   supervisors: []
+  schedule:
+    start: '2025-06-23'
+    end: '2025-06-23'
+    schedule: weekly
+    day: Monday
+    exclusions: []
 ---
 
 <Locale value="de">

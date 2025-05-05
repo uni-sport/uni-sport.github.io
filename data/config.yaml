@@ -9,8 +9,32 @@ calendar:
     - 2025-06-09 # Pfingstmontag
     - 2025-06-19 # Fronleichnam
 
-rooms: {}
+rooms: 
+  Beachvolleyball 1 C:
+  - Beachvolleyballfelder
+  Beachvolleyball 1 B:
+  - Beachvolleyballfelder
+  Beachvolleyball 1 gesamte Anlage:
+  - Beachvolleyballfelder
+  Gym/ Mehrzweckhalle:
+    - Mehrzweckhalle
+  Spielhalle 1+2:
+    - Spielhalle 1
+    - Spielhalle 2
+  Spielhalle 1+2+3:
+    - Spielhalle 1
+    - Spielhalle 2
+    - Spielhalle 3
+  Spielhalle 2+3:
+    - Spielhalle 2
+    - Spielhalle 3
+  Tennisplatz 4&5:
+    - Tennisplatz 4
+    - Tennisplatz 5
 
+ignore:
+  - 2
+  - 188
 
 
 courses:
@@ -187,7 +211,6 @@ courses:
   description_en: Training area equipped for targeted strength development.
   ids:
     - 230
-    - 120
     - 232
 
 - name_de: Fechten
@@ -462,7 +485,6 @@ courses:
   ids:
     - 153
     - 154
-    - 188
 
 - name_de: Ganzkörpertraining
   name_en: Full Body Workout
@@ -557,3 +579,35 @@ courses:
   ids:
     - 90
 
+- name_de: ReLoco Crew
+  name_en: ReLoco Crew
+  description_de: Tanz- und Bewegungsgruppe mit kreativem Ausdruck und Gemeinschaftsgeist.
+  description_en: Dance and movement group focused on creative expression and community spirit.
+  ids:
+    - 70
+
+- name_de: Rudern
+  name_en: Rowing
+  description_de: Wassersport mit synchronem Paddeln im Team oder einzeln.
+  description_en: Water sport involving synchronized paddling in teams or solo.
+  ids:
+    - 148
+    - 149
+
+- name_de: Laufen
+  name_en: Running
+  description_de: Ausdauersportart zur Förderung von Herz-Kreislauf und Fitness.
+  description_en: Endurance sport that enhances cardiovascular health and fitness.
+  ids:
+    - 218
+    - 105
+    - 201
+    - 59
+    - 223
+
+- name_de: Roundnet
+  name_en: Roundnet
+  description_de: Teamsport, bei dem ein Ball auf ein Netz geschlagen wird.
+  description_en: Team sport where a ball is hit onto a net.
+  ids:
+    - 94

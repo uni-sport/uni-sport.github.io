@@ -6,22 +6,36 @@ description_en: Indoor sport with a ball and sticks, similar to hockey.
 time_slots:
 - name_de: Unihockey
   name_en: Unihockey
-  room: Spielhalle 2+3
-  day: Mittwoch
+  rooms: &id001
+  - Spielhalle 2
+  - Spielhalle 3
+  day: Wednesday
   startTime: "20:00"
   endTime: "21:59"
   supervisors:
   - name: Daniel Hollerauer
   - name: Jiri Reichmann
+  schedule:
+    start: '2025-04-23'
+    end: '2025-07-23'
+    schedule: weekly
+    day: Wednesday
+    exclusions: []
 - name_de: Unihockey
   name_en: Unihockey
-  room: Spielhalle 2+3
-  day: Freitag
+  rooms: *id001
+  day: Friday
   startTime: "19:00"
   endTime: "20:29"
   supervisors:
   - name: Daniel Hollerauer
   - name: Jiri Reichmann
+  schedule:
+    start: '2025-04-25'
+    end: '2025-07-25'
+    schedule: weekly
+    day: Friday
+    exclusions: []
 ---
 
 <Locale value="de">
