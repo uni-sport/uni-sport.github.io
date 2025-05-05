@@ -84,7 +84,12 @@ def name_to_id(name: str):
 
 
 def remove_html_tags(text):
-    clean = re.compile("<.*?>")
+    style_tag = re.compile("<style.*?>.*?</style>", re.DOTALL)
+    text = re.sub(style_tag, "", text)
+    fuck_ms_word = re.compile("</?(w|o):[^>]+>")
+    text = re.sub(r"&nbsp;", "", text)
+    text = re.sub(fuck_ms_word, "", text)
+    clean = re.compile("<.*?>", re.DOTALL)
     return re.sub(clean, "", text)
 
 

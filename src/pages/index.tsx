@@ -2,7 +2,6 @@
 import routes from "virtual:generated-pages-react";
 import { Link } from "react-router-dom";
 
-import config from "../config.yaml";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
       </div>
 
 
-      <p>This is the home page.</p>
+      <p></p>
     </div>
   );
 }

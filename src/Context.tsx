@@ -16,8 +16,8 @@ interface TimeSlotRaw {
   name_en: string;
   rooms: string[];
   day: string;
-  startTime: number;
-  endTime: number;
+  startTime: string;
+  endTime: string;
   supervisors: Supervisor[];
   schedule: Schedule;
 }
